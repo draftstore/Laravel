@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from html.matethemes.com/crete/demo/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:52:34 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crete - Project</title>
+
+    <!--Essential css files-->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/fancybox.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon.png">
+
+</head>
+<body>
+
+    <!--prealoder start-->
+    <div class="preloader">
+        <div class="loader">
+            <svg class="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" stroke-linecap="round" stroke-width="16" transform="rotate(-90,64,64)">
+                    <circle class="pl__ring" r="56" cx="64" cy="64" stroke="#ddd" />
+                    <circle class="pl__worm pl__worm--moving" r="56" cx="64" cy="64" stroke="currentColor" stroke-dasharray="22 307.86 22" data-worm />
+                </g>
+                <g data-particles></g>
+            </svg>
+        </div>
+    </div>
+    <!--prealoder end-->
+
+    <!--circle cursor start-->
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2">					
+        <div class="ball"></div>
+    </div>
+    <div class='cursor3' id="cursor3"></div>
+    <!--circle cursor end-->
+
+   <!--color switcher start-->
+   <button class="color-switcher-btn active"><i class="fa-solid fa-gear"></i></button>
+   <!--color switcher end-->
+
+    <!--color switcher palatte start-->
+    <div class="theme-color-switch">
+        <div class="d-flex align-items-center justify-content-between gap-3">
+            <h6 class="fs-18 mb-0">Theme Colors</h6>
+            <button class="close-switcher"><i class="fas fa-xmark"></i></button>
+        </div>
+        <ul class="color-list">
+            <li><a href="javascript:void(0)" class="purple" title="purple"></a></li>
+            <li><a href="javascript:void(0)" class="red" title="red"></a></li>
+            <li><a href="javascript:void(0)" class="blue" title="blue"></a></li>
+            <li><a href="javascript:void(0)" class="orange" title="orange"></a></li>
+            <li><a href="javascript:void(0)" class="green" title="green"></a></li>
+            <li><a href="javascript:void(0)" class="primary" title="primary"></a></li>
+        </ul>
+        <hr>
+        <h6 class="fs-18 mb-3">Magic Cursor</h6>
+        <ul class="cursor-list">
+            <li><a href="#" class="cursor-circle"><i class="fa-solid fa-circle"></i></a></li>
+            <li><a href="#" class="cursor-normal"><i class="fa-solid fa-arrow-pointer"></i></a></li>
+        </ul>
+        <a href="https://themeforest.net/item/crete-personal-portfolio-and-creative-agency-html-template/46314511" class="template-btn primary-btn mt-4">Buy Now</a>
+    </div>
+    <!--color switcher palatte end-->
+
+    <!--header section start-->
+    <header class="header-section position-relative z-2 header-sticky">
+        <div class="container">
+            <div class="infobar py-2 d-none d-lg-block">
+                <div class="row g-4 align-items-center justify-content-between">
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="infobar-content d-flex align-items-center">
+                            <a href="tel:1044123456789" class="mb-0 text-white fs-sm fw-semibold"><span class="me-2"><i class="fa-solid fa-phone"></i></span>+1(044) 123 456 789</a>
+                            <p class="text-white fs-sm mb-0 fw-semibold"><span class="me-2"><i class="fa-solid fa-location-dot"></i></span>27 Divi ST, Berlin, Germany</p>
+                            <a href="mailto:info@crete.com" class="text-white fw-semibold fs-sm"><span class="me-2"><i class="fa-solid fa-envelope"></i></span>info@crete.com</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-5">
+                        <div class="d-flex align-items-center justify-content-end gap-5 infobar-right">
+                            <div class="language-switcher">
+                                <select class="nice_select bg-transparent list-headings-color">
+                                    <option value="English">English</option>
+                                    <option value="English">Bangla</option>
+                                    <option value="English">Hindi</option>
+                                    <option value="English">Arabic</option>
+                                </select>
+                            </div>
+                            <div class="info-social border-left header-icons-white">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="crete-navbar bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-6">
+                        <div class="logo-wrapper">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-9 d-none d-lg-block">
+                        <nav class="crete-navmenu text-center ps-xl-5">
+                            <ul>
+                                <li class="has-submenu">
+                                    <a href="javascript:void(0)">Home</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="index.html">Home 1</a></li>
+                                        <li><a href="index-2.html">Home 2</a></li>
+                                        <li><a href="index-3.html">Home 3</a></li>
+                                        <li><a href="index-4.html">Home 4</a></li>
+                                        <li><a href="index-5.html">Home 5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li class="has-submenu">
+                                    <a href="javascript:void(0)">Project</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="projects.html">Projects</a></li>
+                                        <li><a href="project-details.html">Project Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="javascript:void(0)">Pages</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                        <li><a href="team.html">Our Team</a></li>
+                                        <li><a href="team-details.html">Team Details</a></li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="javascript:void(0)">Blog</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="blog-list.html">Blog List</a></li>
+                                        <li><a href="blog-single.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xl-3 col-lg-1 col-6">
+                        <div class="text-end d-flex align-items-center justify-content-end header-right gap-3">
+                            <a href="contact.html" class="template-btn primary-btn d-none d-sm-block d-lg-none d-xl-block">Contact Us</a>
+                            <button type="button" class="header-toggle offcanvus-toggle d-none d-lg-inline-flex">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <button type="button" class="header-toggle mobile-menu-toggle d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header section end-->
+
+    <!--mobile menu start-->
+    <div class="mobile-menu">
+        <a href="javascript:void(0)" class="close"><i class="fas fa-xmark"></i></a>
+        <a href="#" class="logo"><img src="assets/images/logo-white.png" alt="logo" class="img-fluid"></a>
+        <ul class="mobile-nav-menu">
+            <li class="has-submenu">
+                <a href="javascript:void(0)">Home</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="index-2.html">Home 2</a></li>
+                    <li><a href="index-3.html">Home 3</a></li>
+                    <li><a href="index-4.html">Home 4</a></li>
+                    <li><a href="index-5.html">Home 5</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li class="has-submenu"><a href="projects.html">Project</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="project-details.html">Project Details</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu"><a href="javascript:void(0)">Pages</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="service-details.html">Service Details</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="team-details.html">Team Details</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu"><a href="javascript:void(0)">Blog</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper">
+                    <li><a href="blog-list.html">Blog List</a></li>
+                    <li><a href="blog-single.html">Blog Details</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <form class="mobile-search mt-5" action="#">
+            <input type="text" placeholder="Search..." class="theme-input">
+            <button type="submit" class="template-btn primary-btn mt-3"><span>Go</span></button>
+        </form>
+    </div>
+    <!--mobile menu end-->
+
+    <!--offcanvus start-->
+    <div class="offcanvus-box position-fixed bg-white">
+        <a href="javascript:void(0)" class="offcanvus-close"><i class="fa-solid fa-xmark"></i></a>
+        <div class="content-top">
+            <a href="index.html" class="offcanvus-logo"><img src="assets/images/logo.png" alt="logo"></a>
+            <p class="mb-0 mt-32 fw-light">Distrak Street 2SK Line, Germanygalore@inside-support.com (+125) 2156-2145</p>
+        </div>
+        <div class="offcanvus-gallery d-flex align-items-center flex-wrap">
+            <a href="#"><img src="assets/images/gallery/1.jpg" alt="not found"></a>
+            <a href="#"><img src="assets/images/gallery/2.jpg" alt="not found"></a>
+            <a href="#"><img src="assets/images/gallery/3.jpg" alt="not found"></a>
+            <a href="#"><img src="assets/images/gallery/4.jpg" alt="not found"></a>
+            <a href="#"><img src="assets/images/gallery/5.jpg" alt="not found"></a>
+            <a href="#"><img src="assets/images/gallery/6.jpg" alt="not found"></a>
+        </div>
+        <div class="offcanvus-newsletter">
+            <h6 class="mb-4 text-center">Newsletter</h6>
+            <form action="#">
+                <input type="email" placeholder="Enter your e-mail" class="theme-input">
+                <button type="submit" class="template-btn primary-btn mt-3 w-100"><span>SUBSCRIBE NOW</span></button>
+            </form>
+        </div>
+        <div class="offcanvus-bottom d-flex align-items-center justify-content-between">
+            <div class="language-switcher">
+                <div class="dropdown">
+                    <button type="button" data-bs-toggle="dropdown"><img src="assets/images/icons/flag-usa.png" alt="flag">English <span><i class="fas fa-angle-down"></i></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><img src="assets/images/icons/flag-bd.jpg" alt="flag">Bangla</a></li>
+                        <li><a href="#"><img src="assets/images/icons/flag-india.jpg" alt="flag">Hindi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-links">
+                <a href="login.html" class="text-uppercase fw-bold fs-sm">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <!--offcanvus end-->
+
+    <!--bradcrumb section start-->
+    <div class="breadcrumb-section position-relative z-1 overflow-hidden" data-background="assets/images/banner/breadcrumb.jpg">
+        <span class="circle-shape-1 rounded-circle position-absolute"></span>
+        <span class="circle-shape-2 rounded-circle position-absolute"></span>
+        <span class="circle-shape-3 rounded-circle position-absolute"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h1 class="text-white mb-3 display-2 fw-bold">Services</h1>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>Serivces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--bradcrumb section end-->
+
+    <!--service section start-->
+    <section class="service-section ptb-100 bg-light-white">
+        <div class="container">
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="hm2-service-box text-center text-lg-start wow fadeInUp">
+                        <span class="icon-wrapper"> 
+                            <img src="assets/images/icons/icon-1.svg" alt="icon" class="img-fluid">
+                        </span>
+                        <h6 class="mt-32">Web Development</h6>
+                        <p class="mb-32 mt-4 fw-medium">There are many variations of passages of lorem Ipsum available but to the majority have suffered but the into</p>
+                        <a href="service-details.html" class="explore-btn">
+                            Get Started 
+                            <span class="ms-2">
+                                <i class="fa-solid fa-arrow-right"></i> 
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="hm2-service-box text-center text-lg-start wow fadeInUp" data-wow-delay="0.1s">
+                        <span class="icon-wrapper"> 
+                            <img src="assets/images/icons/icon-2.svg" alt="icon" class="img-fluid">
+                        </span>
+                        <h6 class="mt-32">Digital Marketing</h6>
+                        <p class="mb-32 mt-4 fw-medium">There are many variations of passages of lorem Ipsum available but to the majority have suffered but the into</p>
+                        <a href="service-details.html" class="explore-btn">
+                            Get Started 
+                            <span class="ms-2">
+                                <i class="fa-solid fa-arrow-right"></i> 
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="hm2-service-box text-center text-lg-start wow fadeInUp" data-wow-delay="0.2s">
+                        <span class="icon-wrapper"> 
+                            <img src="assets/images/icons/icon-3.svg" alt="icon" class="img-fluid">
+                        </span>
+                        <h6 class="mt-32">Content Strategy</h6>
+                        <p class="mb-32 mt-4 fw-medium">There are many variations of passages of lorem Ipsum available but to the majority have suffered but the into</p>
+                        <a href="service-details.html" class="explore-btn">
+                            Get Started 
+                            <span class="ms-2">
+                                <i class="fa-solid fa-arrow-right"></i> 
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="hm2-service-box text-center text-lg-start wow fadeInUp" data-wow-delay="0.3s">
+                        <span class="icon-wrapper"> 
+                            <img src="assets/images/icons/icon-4.svg" alt="icon" class="img-fluid">
+                        </span>
+                        <h6 class="mt-32">Software Development</h6>
+                        <p class="mb-32 mt-4 fw-medium">There are many variations of passages of lorem Ipsum available but to the majority have suffered but the into</p>
+                        <a href="service-details.html" class="explore-btn">
+                            Get Started 
+                            <span class="ms-2">
+                                <i class="fa-solid fa-arrow-right"></i> 
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="hm2-service-box text-center text-lg-start wow fadeInUp" data-wow-delay="0.4s">
+                        <span class="icon-wrapper"> 
+                            <img src="assets/images/icons/icon-5.svg" alt="icon" class="img-fluid">
+                        </span>
+                        <h6 class="mt-32">Pro Video Editing</h6>
+                        <p class="mb-32 mt-4 fw-medium">There are many variations of passages of lorem Ipsum available but to the majority have suffered but the into</p>
+                        <a href="service-details.html" class="explore-btn">
+                            Get Started 
+                            <span class="ms-2">
+                                <i class="fa-solid fa-arrow-right"></i> 
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="hm2-service-box text-center text-lg-start wow fadeInUp" data-wow-delay="0.5s">
+                        <span class="icon-wrapper"> 
+                            <img src="assets/images/icons/icon-6.svg" alt="icon" class="img-fluid">
+                        </span>
+                        <h6 class="mt-32">Product Design</h6>
+                        <p class="mb-32 mt-4 fw-medium">There are many variations of passages of lorem Ipsum available but to the majority have suffered but the into</p>
+                        <a href="service-details.html" class="explore-btn">
+                            Get Started 
+                            <span class="ms-2">
+                                <i class="fa-solid fa-arrow-right"></i> 
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--service section end-->
+
+    <!--feature section start-->
+    <section class="ptb-100 sr-feature-section" data-background="assets/images/banner/sr-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7">
+                    <div class="sr-feature-box bg-white rounded-4 theme-shadow">
+                        <span class="cr-subtitle position-relative fw-semibold primary-text-color">Company Features</span>
+                        <h3 class="mb-5 mt-4">We Provide Best Solution For Your <span class="primary-text-color primary-bg-light px-1">Company</span></h3>
+                        <div class="row g-5">
+                            <div class="col-sm-6">
+                                <div class="sr-image-box">
+                                    <span class="icon">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M30.5659 20.3548L23.0534 27.4505L19.4479 23.7412C19.0482 23.3297 18.3901 23.3204 17.979 23.7201C17.5675 24.1202 17.5581 24.7779 17.9578 25.1894L22.282 29.6285C22.6838 30.0327 23.333 30.0465 23.7514 29.6594L32.0145 21.8657C32.2151 21.6764 32.3324 21.4151 32.3401 21.1395C32.3478 20.864 32.2457 20.5966 32.056 20.3963C31.6538 19.9783 30.9908 19.96 30.5659 20.3548Z" fill="#5044EB"/>
+                                            <path d="M24.9929 9.43555C16.4071 9.43555 9.42578 16.4169 9.42578 25.0027C9.42578 33.5889 16.4071 40.5703 24.9929 40.5703C33.5792 40.5703 40.5605 33.5889 40.5605 25.0027C40.5605 16.4169 33.5792 9.43555 24.9929 9.43555ZM24.9929 38.4863C17.5533 38.4863 11.5098 32.4322 11.5098 25.0027C11.5098 17.5732 17.5533 11.5195 24.9929 11.5195C32.4399 11.5195 38.4765 17.5561 38.4765 25.0027C38.4765 32.4493 32.4399 38.4863 24.9929 38.4863Z" fill="#5044EB"/>
+                                            <path d="M46.4154 19.2716L46.7594 13.0925C46.7834 12.6778 46.5579 12.2882 46.1863 12.1026L40.6845 9.32061L37.9024 3.81883C37.7132 3.45047 37.3261 3.2262 36.9126 3.24573L30.7229 3.5795L25.5651 0.171867C25.2175 -0.057289 24.7669 -0.057289 24.4189 0.171867L19.261 3.5795L13.0824 3.23556C12.6672 3.21114 12.2781 3.43663 12.0925 3.80865L9.31003 9.31044L3.80865 12.0925C3.43989 12.2813 3.21602 12.6684 3.23556 13.0824L3.57909 19.2614L0.171867 24.4193C-0.057289 24.7669 -0.057289 25.2175 0.171867 25.5655L3.56891 30.7335L3.22498 36.9126C3.20096 37.3273 3.42605 37.7168 3.79807 37.9024L9.29985 40.6845L12.0819 46.1863C12.2707 46.555 12.6578 46.7789 13.0718 46.7594L19.2508 46.4154L24.4087 49.8226C24.7543 50.0591 25.2093 50.0591 25.5549 49.8226L30.7127 46.4154L36.8918 46.7594C37.3066 46.7834 37.6957 46.5579 37.8817 46.1863L40.6637 40.6845L46.1655 37.9024C46.5339 37.7132 46.7581 37.3265 46.7386 36.9126L46.3947 30.7335L49.8019 25.5756C50.031 25.228 50.031 24.7771 49.8019 24.4294L46.4154 19.2716ZM44.4772 29.8791C44.3502 30.0656 44.2911 30.2898 44.3107 30.5149L44.6334 36.3602L39.4341 38.986C39.2359 39.0853 39.0751 39.2464 38.9758 39.4447L36.3496 44.644L30.5043 44.3213C30.2805 44.3131 30.0594 44.3709 29.8685 44.4877L24.992 47.7077L20.1158 44.4877C19.9465 44.3734 19.747 44.3115 19.5427 44.3107H19.4906L13.6449 44.6339L11.0191 39.4341C10.9198 39.2359 10.759 39.0751 10.5604 38.9758L5.35047 36.3602L5.67365 30.5149C5.68179 30.291 5.62359 30.07 5.50677 29.8791L2.28719 25.0025L5.50677 20.126C5.63417 19.9399 5.69319 19.7153 5.67365 19.4906L5.35047 13.6449L10.5502 11.0191C10.7485 10.9198 10.9092 10.759 11.0086 10.5608L13.6343 5.36105L19.48 5.68423C19.7035 5.69197 19.9245 5.63417 20.1158 5.51735L24.992 2.29777L29.8685 5.51735C30.055 5.64475 30.2796 5.70377 30.5043 5.68423L36.3496 5.36105L38.9758 10.5608C39.0751 10.759 39.2359 10.9198 39.4341 11.0191L44.6334 13.6449L44.3107 19.4906C44.3025 19.714 44.3607 19.9351 44.4772 20.126L47.6971 25.0025L44.4772 29.8791Z" fill="#5044EB"/>
+                                        </svg>
+                                    </span>
+                                    <h5 class="mt-4 mb-20 fs-20">Quality Services</h5>
+                                    <p class="mb-0">Purpose quality vectors with highly efficient incubate</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="sr-image-box">
+                                    <span class="icon">
+                                        <svg width="48" height="50" viewBox="0 0 48 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M27.6648 17.4219H24.5918C24.1872 17.4219 23.8594 17.7498 23.8594 18.1543C23.8594 18.5588 24.1872 18.8867 24.5918 18.8867H27.6648C28.0693 18.8867 28.3972 18.5588 28.3972 18.1543C28.3972 17.7498 28.0692 17.4219 27.6648 17.4219Z" fill="#5044EB"/>
+                                            <path d="M27.6648 14.9707H24.5918C24.1872 14.9707 23.8594 15.2986 23.8594 15.7031C23.8594 16.1076 24.1872 16.4355 24.5918 16.4355H27.6648C28.0693 16.4355 28.3972 16.1076 28.3972 15.7031C28.3972 15.2986 28.0692 14.9707 27.6648 14.9707Z" fill="#5044EB"/>
+                                            <path d="M23.64 12.3906C22.5332 12.3906 21.6328 13.291 21.6328 14.3978V19.4587C21.6328 20.5654 22.5332 21.4657 23.64 21.4657H28.6093C29.7161 21.4657 30.6165 20.5653 30.6165 19.4587V14.3978C30.6165 13.291 29.7161 12.3906 28.6093 12.3906H23.64ZM29.1515 14.3978V19.4587C29.1515 19.7577 28.9083 20.0009 28.6092 20.0009H23.6399C23.3409 20.0009 23.0976 19.7576 23.0976 19.4587V14.3978C23.0976 14.0988 23.3409 13.8555 23.6399 13.8555H28.6092C28.9083 13.8555 29.1515 14.0988 29.1515 14.3978Z" fill="#5044EB"/>
+                                            <path d="M0.330102 38.0074L8.28731 49.2417C8.86731 50.0606 10.0183 50.245 10.8529 49.6538C11.6399 49.0964 17.8913 44.6686 18.8394 43.9971C19.6664 43.4112 19.8653 42.2733 19.284 41.4527L19.0907 41.1797C21.1265 40.1624 23.3791 39.6396 25.6605 39.669L35.3413 39.7869C37.1489 39.8327 38.9589 39.2838 40.4354 38.2434L46.3729 34.0601C47.7702 33.0756 48.1573 31.1383 47.2356 29.7413C46.7615 29.0228 46.0344 28.539 45.188 28.3789C45.1747 28.3764 45.1613 28.3747 45.148 28.3724C44.9983 27.4836 44.5337 26.6739 43.8699 26.1991C42.4441 25.1794 40.4735 25.5247 39.4699 26.9718L35.0606 33.3296L33.6058 33.1847C34.0072 32.7003 34.2765 32.1006 34.3571 31.4383C34.5794 29.6145 33.3253 27.9674 31.5018 27.6886L20.7481 26.0445C19.3374 25.8286 17.9188 26.162 16.7538 26.9828L11.6048 30.6106L11.3269 30.2183C10.7448 29.3963 9.60483 29.2085 8.77922 29.7934C7.82949 30.4661 1.73892 34.78 0.79271 35.4502C-0.0411957 36.0409 -0.253505 37.1835 0.330102 38.0074ZM40.6737 27.8067C41.212 27.0306 42.2585 26.8478 43.0179 27.3907C43.3269 27.6117 43.5647 28.0135 43.6725 28.4615C43.3459 28.5619 43.0383 28.7177 42.779 28.9003L37.1789 32.8459L40.6737 27.8067ZM17.5975 28.1803C18.4516 27.5785 19.4917 27.3344 20.5268 27.4925L31.2805 29.1368C32.3163 29.2952 33.0291 30.2282 32.9031 31.2611C32.7908 32.1836 32.032 32.8913 31.099 32.944C30.9889 32.9501 31.4476 32.9823 27.0288 32.6293C26.6243 32.598 26.2725 32.8979 26.2403 33.3011C26.2081 33.7043 26.5088 34.0574 26.9121 34.0895C27.0101 34.0973 35.7108 34.7849 35.9144 34.8868C36.4201 34.9383 36.9504 34.7989 37.3681 34.5046L39.9643 32.6753L43.6228 30.0977C44.3844 29.561 45.4749 29.7324 46.0129 30.5478C46.5032 31.2908 46.2863 32.3292 45.5295 32.8624L39.5919 37.0457C38.3707 37.9062 36.8771 38.3595 35.3686 38.3221L25.6784 38.2042C23.0903 38.1745 20.5309 38.7816 18.2341 39.97C17.6632 39.1639 13.0315 32.6247 12.4514 31.8059L17.5975 28.1803ZM9.62592 30.9889C9.79506 30.8692 10.0204 30.9082 10.1316 31.065C10.6629 31.815 17.0915 40.8912 17.415 41.348L18.0888 42.2994C18.1996 42.4558 18.1622 42.6817 17.9929 42.8016L16.2693 44.0224C16.1497 43.8536 8.02198 32.3784 7.90235 32.2096L9.62592 30.9889ZM1.63931 36.6456L6.70691 33.0563C6.82654 33.2251 14.9543 44.7003 15.0739 44.8692L10.0063 48.4584C9.83061 48.5827 9.59574 48.5544 9.48275 48.3949L1.52544 37.1607C1.41626 37.0065 1.45815 36.7741 1.63931 36.6456Z" fill="#5044EB"/>
+                                            <path d="M40.7474 22.617H32.5235C32.1189 22.617 31.791 22.945 31.791 23.3495C31.791 23.754 32.1189 24.0819 32.5235 24.0819H40.7474C41.9097 24.0819 42.8554 23.1362 42.8554 21.9738V2.10796C42.8554 0.945627 41.9098 0 40.7474 0C40.0027 0 21.643 0 20.8815 0C19.7192 0 18.7734 0.945627 18.7734 2.10796V21.9737C18.7734 23.1362 19.7192 24.0818 20.8815 24.0818H29.1054C29.51 24.0818 29.8379 23.7539 29.8379 23.3494C29.8379 22.9449 29.51 22.6169 29.1054 22.6169H20.8815C20.5268 22.6169 20.2383 22.3283 20.2383 21.9737V2.10796C20.2383 1.75336 20.5268 1.46488 20.8815 1.46488H27.3314V9.44162C27.3314 10.4102 28.4089 10.9812 29.2095 10.4571L30.8144 9.40685L32.4193 10.457C33.2251 10.9845 34.2974 10.4048 34.2974 9.44162V6.65845C34.2974 6.25395 33.9696 5.92601 33.565 5.92601C33.1604 5.92601 32.8325 6.25395 32.8325 6.65845V8.97686L31.479 8.0911C31.0752 7.82694 30.5535 7.82703 30.15 8.0911L28.7964 8.97686V1.46488H32.8326V3.24041C32.8326 3.64491 33.1605 3.97284 33.5651 3.97284C33.9697 3.97284 34.2975 3.64491 34.2975 3.24041V1.46488H40.7475C41.1022 1.46488 41.3907 1.75336 41.3907 2.10796V21.9737C41.3906 22.3285 41.1021 22.617 40.7474 22.617Z" fill="#5044EB"/>
+                                        </svg>
+                                    </span>
+                                    <h5 class="mt-4 mb-20 fs-20">Fast Delivery</h5>
+                                    <p class="mb-0">Purpose quality vectors with highly efficient incubate</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sr-service-progress mt-5">
+                            <div class="cr-progress-single">
+                                <div class="d-flex align-items-center justify-content-between gap-3 mb-40">
+                                    <h6 class="mb-0 fs-18">Product Design</h6>
+                                    <h6 class="mb-0 fs-18">70%</h6>
+                                </div>
+                                <div class="cr-progress-bar">
+                                    <div class="cr-progress" data-percent="70" data-color="#5044EB"></div>
+                                </div>
+                            </div>
+                            <div class="cr-progress-single mt-32">
+                                <div class="d-flex align-items-center justify-content-between gap-3 mb-40">
+                                    <h6 class="mb-0 fs-18">Industry Expertise</h6>
+                                    <h6 class="mb-0 fs-18">93%</h6>
+                                </div>
+                                <div class="cr-progress-bar">
+                                    <div class="cr-progress" data-percent="93" data-color="#5044EB"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--feature section end-->
+
+
+    <!--blog section start-->
+    <section class="blog-section ptb-100 bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-center">
+                        <span class="cr-subtitle position-relative primary-text-color fw-semibold">What's Going On</span>
+                        <h2 class="mt-4">Latest News <span class="primary-bg-light primary-text-color px-2">Updates</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 justify-content-center g-4">
+                <div class="col-xl-4 col-sm-6">
+                    <article class="hm2-blog-card">
+                        <div class="feature-image rounded-3 overflow-hidden position-relative">
+                            <img src="assets/images/blog/blog-3.jpg" alt="blog" class="img-fluid">
+                            <a href="https://www.youtube.com/watch?v=6WZOxnYi4Cs" class="video-btn video-popup-btn rounded-circle d-inline-flex align-items-center justify-content-center"><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="blog-content mt-32">
+                            <div class="blog-meta d-flex align-items-center flex-wrap gap-4">
+                                <span class="fs-sm fw-medium">25 June, 2023</span>
+                                <span class="fs-sm fw-medium">6 min read</span>
+                            </div>
+                            <a href="blog-single.html"><h6 class="my-4">The Highly Creative UI/UX Design from a Silicon Valley.</h6></a>
+                            <div class="categories d-flex align-items-center gap-3 flex-wrap">
+                                <a href="#">Digital</a>
+                                <a href="#">Software</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <article class="hm2-blog-card">
+                        <div class="feature-image rounded-3 overflow-hidden position-relative">
+                            <img src="assets/images/blog/blog-4.jpg" alt="blog" class="img-fluid">
+                            <a href="https://www.youtube.com/watch?v=6WZOxnYi4Cs" class="video-btn video-popup-btn rounded-circle d-inline-flex align-items-center justify-content-center"><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="blog-content mt-32">
+                            <div class="blog-meta d-flex align-items-center flex-wrap gap-4">
+                                <span class="fs-sm fw-medium">25 June, 2023</span>
+                                <span class="fs-sm fw-medium">6 min read</span>
+                            </div>
+                            <a href="blog-single.html"><h6 class="my-4">The Highly Creative UI/UX Design from a Silicon Valley.</h6></a>
+                            <div class="categories d-flex align-items-center gap-3 flex-wrap">
+                                <a href="#">Digital</a>
+                                <a href="#">Software</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <article class="hm2-blog-card">
+                        <div class="feature-image rounded-3 overflow-hidden position-relative">
+                            <img src="assets/images/blog/blog-5.jpg" alt="blog" class="img-fluid">
+                            <a href="https://www.youtube.com/watch?v=6WZOxnYi4Cs" class="video-btn video-popup-btn rounded-circle d-inline-flex align-items-center justify-content-center"><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="blog-content mt-32">
+                            <div class="blog-meta d-flex align-items-center flex-wrap gap-4">
+                                <span class="fs-sm fw-medium">25 June, 2023</span>
+                                <span class="fs-sm fw-medium">6 min read</span>
+                            </div>
+                            <a href="blog-single.html"><h6 class="my-4">The Highly Creative UI/UX Design from a Silicon Valley.</h6></a>
+                            <div class="categories d-flex align-items-center gap-3 flex-wrap">
+                                <a href="#">Digital</a>
+                                <a href="#">Software</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--blog section end-->
+
+
+    <!--brand section start-->
+    <div class="cr2-footer-brands">
+        <div class="container">
+            <div class="cr2-footer-brand-slider">
+                <span class="text-white fs-sm text-uppercase fw-bold">Facebook</span>
+                <span class="text-white fs-sm text-uppercase fw-bold">Instagram</span>
+                <span class="text-white fs-sm text-uppercase fw-bold">Twitter</span>
+                <span class="text-white fs-sm text-uppercase fw-bold">Discord</span>
+                <span class="text-white fs-sm text-uppercase fw-bold">Pinterest</span>
+                <span class="text-white fs-sm text-uppercase fw-bold">Skype</span>
+                <span class="text-white fs-sm text-uppercase fw-bold">Slack</span>
+            </div>
+        </div>
+    </div>
+    <!--brand section end-->
+
+    <!--footer section start-->
+    <footer class="footer-style-2 overflow-hidden position-relative z-1">
+        <span class="circle-shape-1 position-absolute z--1 rounded-circle"></span>
+        <span class="circle-shape-2 position-absolute z--1 rounded-circle"></span>
+        <div class="footer-bottom pt-100">
+            <div class="container position-relative z-1">
+                <div class="row g-4">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget text-widget">
+                            <img src="assets/images/logo-white.png" alt="logo" class="img-fluid">
+                            <p class="my-32 text-white">Tempus nula rhoncus euismod curae masa cras justo quisque semper usto molestie primis porttitor </p> 
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-skype"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="footer-widget nav-widget">
+                            <h6 class="widget-title">Company</h6>
+                            <ul class="footer-links">
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget schedule-widget">
+                            <h6 class="widget-title">Working Time</h6>
+                            <ul class="schedule-list">
+                                <li>Mon - Fri: 9:00 AM - 5:00 PM</li>
+                                <li>Saturday: 10:00 AM - 6:00 PM</li>
+                                <li>Sunday Closed</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer-widget footer-newsletter">
+                            <h6 class="widget-title">Sign up for the newsletter</h6>
+                            <form>
+                                <div class="newsletter-form d-flex align-items-center">
+                                    <input type="email" placeholder="Email address" class="theme-input">
+                                    <button type="submit" class="template-btn primary-btn">Sign Up</button>
+                                </div>
+                                <label class="text-white mt-4">
+                                    <span class="me-2 d-inline-block">
+                                        <input type="checkbox">
+                                        <span><i class="fas fa-check"></i></span>
+                                    </span>I'm okay with getting emails and having that tracked to improve my experience
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright mt-60 py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="copyright-text">
+                            <p class="mb-0 text-white">&copy;2023 Crete. All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="copyright-links">
+                            <a href="#">Security</a>
+                            <a href="#">Privacy & Policy</a>
+                            <a href="#">Terms & Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer section end-->
+
+    <!--scrolltop button start-->
+    <button type="button" class="scroll-top-btn"><i class="fa-solid fa-angle-up"></i></button>
+    <!--scrolltop button end-->
+
+    <!--Esential Js Files-->
+        <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/fancybox.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/progress-bar.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/tilt-js.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/isotop.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    
+</body>
+
+<!-- Mirrored from html.matethemes.com/crete/demo/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 02:52:34 GMT -->
+</html>
