@@ -110,9 +110,11 @@
         slidesToShow: 6,
         arrows: false,
         autoplay: true,
-        speed: 700,
-        speed: 2500,
+        speed: 500,
+        speed: 2000,
         autoplaySpeed: 0,
+        pauseOnHover: true,
+        pauseOnFocus: true,
         cssEase: 'linear',
         responsive: [
             {
@@ -601,7 +603,6 @@
 
             //hero banner
             var hero_banner = 'assets/images/banner/hero-banner-' + class_name + '.jpg';
-            var ticker_bg = 'assets/images/shapes/ticker-bg-' + class_name + '.png';
             var hm5_banner = 'assets/images/home-5/section-bg-' + class_name + '.jpg';
 
             $("body").removeAttr("class");
@@ -611,16 +612,9 @@
                 "background-image" : "url(" + hero_banner +")",
             });
 
-            $(".ticker-section").css({
-                "background-image" : "url(" + ticker_bg +")",
-            });
-
-            $(".hm5-main-section").css({
-                "background-image" : "url(" + hm5_banner + ")",
-            });
-
         }); 
     }); 
+    
 
     $(".theme-color-switch a.primary").on("click", function(){
 
@@ -633,16 +627,9 @@
         $(".hero-section").css({
             "background-image" : "url(assets/images/banner/hero-banner.jpg)",
         });
-
-        $(".ticker-section").css({
-            "background-image" : "url(assets/images/shapes/ticker-bg.png)",
-        });
-
-        $(".hm5-main-section").css({
-            "background-image" : "url(assets/images/home-5/section-bg.jpg)",
-        });
         
     });
+
 
     //19. Side Nagigation
     $(".hm5-sidebar-navigation li a").each(function(){
